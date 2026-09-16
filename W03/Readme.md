@@ -195,7 +195,6 @@ notebook 用 `make_classification()` 產生 120 例、30 個特徵的合成 CT r
 
 ## 常見問題
 
-- **`YOUR-GITHUB-ACCOUNT` 尚未替換**：安裝區塊會停止並提示，需填入真正 repo URL。
 - **`nvidia-smi` 找不到**：先確認 Colab runtime 的硬體加速器設定；無 GPU 時仍可完成其他活動。
 - **PyTorch 看不到 GPU**：不要升級 Colab 預裝 PyTorch，重新啟動 runtime 後再測。
 - **Drive 授權錯帳號**：重新掛載並選擇檢查點 0 決定的固定帳號。
