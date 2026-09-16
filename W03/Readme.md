@@ -56,13 +56,13 @@ Cursor；其中只有 Colab 負責執行程式，Gemini 與 Cursor 的項目需�
 4. 把 repo 加入 Python 模組搜尋路徑。
 5. 用清楚訊息提示網址、網路或套件安裝問題。
 
-使用前必須將：
+實際課程 GitHub URL：
 
 ```python
 https://github.com/ysl0829/ndmu-radiomics-ai.git
 ```
 
-改成實際課程 GitHub URL。若安裝後 Colab 要求重新啟動 runtime，請重新啟動並從安裝區塊開始執行。
+若安裝後 Colab 要求重新啟動 runtime，請重新啟動並從安裝區塊開始執行。
 不要自行升級 Colab 預裝的 PyTorch。
 
 #### 檢查點 1：GPU
