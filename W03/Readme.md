@@ -176,17 +176,6 @@ notebook 用 `make_classification()` 產生 120 例、30 個特徵的合成 CT r
 
 提示只界定搜尋方向，不應把「加註解」或「改短變數名稱」誤認為可重現性修補。
 
-<details>
-<summary>教師參考：三項預期問題與修補方向</summary>
-
-1. **版本未鎖定**：安裝指令未指定版本，不同日期或電腦可能安裝不同套件。修補時應改用課程
-   `requirements.txt` 或明確的相容版本清單。
-2. **輸出路徑寫死且位於 `/content`**：Colab runtime 回收後輸出會消失，也無法直接搬到本機。
-   修補時應掛載 Drive 並以 `ROOT` 組合路徑；本機則由同一個路徑工具選擇專案根目錄。
-3. **隨機性未固定**：雖然合成資料本身有種子，資料切分與隨機森林仍未設定 `random_state`，
-   因而可能得到不同 AUC。修補時應呼叫 `set_seed(42)`，並把 `RANDOM_STATE` 傳給每個
-   scikit-learn 隨機操作。
-
 </details>
 
 ### 延伸觀察
