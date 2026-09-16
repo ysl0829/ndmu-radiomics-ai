@@ -59,7 +59,7 @@ Cursor；其中只有 Colab 負責執行程式，Gemini 與 Cursor 的項目需�
 使用前必須將：
 
 ```python
-https://github.com/YOUR-GITHUB-ACCOUNT/ndmu-radiomics-ai.git
+https://github.com/ysl0829/ndmu-radiomics-ai.git
 ```
 
 改成實際課程 GitHub URL。若安裝後 Colab 要求重新啟動 runtime，請重新啟動並從安裝區塊開始執行。
