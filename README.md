@@ -36,7 +36,7 @@ Foundation Model 與多模態資料整合。學生會在每週實作中逐步建
 - 校準 Gemini，並以 Cursor 開啟完整專案資料夾。
 - 完成版本、路徑及隨機性的除錯挑戰。
 
-實作教材：[`notebooks/W03/Readme.md`](ndmu-radiomics-ai/W03/Readme.md)
+實作教材：[`W03/Readme.md`](W03/Readme.md)
 
 ### W04｜醫學影像基礎與資料健檢
 
