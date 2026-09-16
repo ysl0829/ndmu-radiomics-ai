@@ -1,0 +1,62 @@
+# W03–W18 共用環境｜Python 3.12.3 / Linux x86_64 / 驗證日期 2026-09-13
+#
+# 這是全學期唯一的安裝清單，包含核心分析、醫學影像、PyRadiomics
+# 與所有經測試的間接相依套件。W03 建立環境後，W04–W18 沿用同一份。
+#
+# 安裝：
+#   python3.12 -m venv .venv && source .venv/bin/activate
+#   python -m pip install -r requirements.txt
+#   python -m pip check
+#
+# 更新方式（只在完整驗證後執行）：
+#   python3.12 -m venv .venv && source .venv/bin/activate
+#   python -m pip install <經測試的直接相依套件與 PyRadiomics commit>
+#   python -m pip check
+#   python -m pip freeze > requirements.txt
+#
+# 注意：
+# - 不含 torch / torchvision；Colab 使用預裝且與 CUDA 配對的版本。
+# - 此環境鎖定受 Python、作業系統與 CPU 架構限制。
+# - 當次驗證：PyRadiomics 可匯入，合成影像可萃取 107 個特徵。
+ImageIO==2.37.4
+PyWavelets==1.10.0
+cloudpickle==3.1.2
+contourpy==1.4.0
+cycler==0.12.1
+docopt==0.6.2
+et_xmlfile==2.0.0
+fonttools==4.65.0
+formulaic==1.2.2
+interface_meta==2.0.1
+joblib==1.6.0
+kiwisolver==1.5.1
+lazy-loader==0.5
+matplotlib==3.11.2
+narwhals==2.26.0
+networkx==3.6.1
+nibabel==5.4.2
+numpy==2.5.3
+openpyxl==3.1.5
+packaging==26.3
+pandas==3.0.5
+patsy==1.0.3
+pillow==12.3.0
+pydicom==3.0.2
+pykwalify==1.8.0
+pyparsing==3.3.2
+pyradiomics @ git+https://github.com/AIM-Harvard/pyradiomics.git@8ed579383b44806651c463d5e691f3b2b57522ab
+python-dateutil==2.9.0.post0
+ruamel.yaml==0.19.1
+scikit-image==0.26.0
+scikit-learn==1.9.1
+scipy==1.18.1
+seaborn==0.13.2
+simpleitk==2.5.6
+six==1.17.0
+statsmodels==0.15.0
+threadpoolctl==3.6.0
+tifffile==2026.9.9
+tqdm==4.70.1
+typing_extensions==4.16.0
+versioneer==0.29
+wrapt==2.4.1
